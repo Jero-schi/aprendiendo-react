@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lalezar", system-ui;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #3A4A3B;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    background-color: #3a4a3b7e;
+  display: flex;
+  align-items: center;
+}
+  
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  padding: 0;
+  margin-right: 60px;
+  width: 100%;
+
+  color: #fff;
+  }
+
+  ul li {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+header .imgPortada {
+  height: 100vh;
+  width: 100%;
+  
+  object-fit: cover;
+  
+  position: relative;
+  }
+  
+  header .div-portada {
+    position: absolute;
+    top: 33vh;
+    
+    margin-left: 5vw;
+    
+  color: #fff;
+}
+
+.div-portada h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  }
+  
+  .div-portada .button-portada {
+    margin-right: 12px;
+    width: 150px;
+    padding: 12px 0px 10px 0px;
+    background-color: #4f4f4fc5;
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid yellow;
+    border-radius: 50px;
+    cursor: pointer;
+    }
+
+.difuso {
+  width: 100%;
+  height: 40px;
+  background-color: #3A4A3B;
+
+  box-shadow: 0px -15px 25px 9px #3A4A3B;
+  /* box-shadow: 0px 10px 8px 11px #3A4A3B inset; */
+  /* filter: blur(6px); */
+
+  position: absolute;
+  bottom: -20px;
+}
+
+.section-personajes {
+  padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  color: #fff;
+}
+
+.div-personajes {
+  display: flex;
+}
+
+.personajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  position: relative;
+}
+
+.personajes img {
+  height: 50vh;
+  position: relative;
+}
+
+.personajes p {
+  font-size: 1.2rem;
+  z-index: 999;
+}
+
+.difusoo {
+  background-color: #3A4A3B;
+  width: 100%;
+  height: 20px;
+
+  box-shadow: 0px -15px 8px 9px #3A4A3B;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.section-historieta {
+  width: 100%;
+}
+
+.section-historieta img {
+  width: 100%;
+}
+
+.section-comentarios {
+  width: 100%;
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.form-comentarios {
+  width: 50%;
+  max-width: 450px;
+  border-radius: 20px;
+  border: 1px solid yellow;
+  padding: 32px;
+
+  background-color: #222;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* align-items: center; */
+}
+
+.form-comentarios h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.div-form {
+  width: 100%;
+}
+
+.div-form .rating {
+  padding-left: 4px;
+  display: flex;
+  gap: 6px;
+  font-size: 1.3rem;
+}
+
+.div-form .rating input {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.star:hover {
+  color: yellow;
+}
+
+.div-form p {
+  padding-left: 4px;
+}
+
+.div-form textarea {
+  width: 100%;
+  height: 2rem;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3A4A3B;
+  color: #fff;
+  padding: 8px;
+  outline: none;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.div-form:nth-last-child(3) span {
+  width: 0;
+  cursor: pointer;
+}
+
+.div-form:last-child {
+  height: 50%;
+}
+
+.div-form:nth-last-child(2) textarea {
+  height: 120px;
+}
+
+.form-comentarios button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px 8px 6px 8px;
+  background-color: rgb(243, 243, 49);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.div-comentarios {
+  width: 50%;
+  max-width: 450px;
+  height: 495px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: scroll;
+}
+
+.div-comentarios::-webkit-scrollbar{
+  background-color: transparent;
+  color: #222;
+}
+
+.div-comentarios .comentario {
+  width: 100%;
+}
+
+.div-comentarios .comentario p {
+  margin-bottom: 4px;
+  padding-left: 4px;
+  color: #fff;
+}
+
+.div-comentarios .comentario div {
+  background-color: rgb(243, 243, 49);
+  color: #222;
+  padding: 1.2rem;
+  border-radius: 12px;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: 60px;
+  padding: 12px;
+  background-color: #263527;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
