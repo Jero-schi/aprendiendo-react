@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css'
 
 const TURNS = {
@@ -17,6 +17,10 @@ const WINNERS = [
   [2, 4, 6]
 ]
 
+useEffect(() => {
+  // como minimo se ejecuta una vez
+  console.log('El codigo a ejecutar');
+}, [])
 
 const Square = ({children, isSelected, updateBoard, index}) => {
   const className = `square ${isSelected ? 'is-selected' : ''}`
